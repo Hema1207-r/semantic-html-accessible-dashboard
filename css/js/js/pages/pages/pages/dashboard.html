@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Accessible Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <h1>Accessible Dashboard</h1>
+    <p>Overview</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="../index.html">Home</a>
+    <a href="dashboard.html" aria-current="page">Dashboard</a>
+    <a href="users.html">Users</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <aside aria-label="Sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+      <li><a href="users.html">User Management</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <section aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Dashboard Overview</h2>
+      <p>Welcome to your accessible administration dashboard.</p>
+
+      <div class="dashboard-cards">
+        <article class="card">
+          <h3>Total Users</h3>
+          <p>120</p>
+        </article>
+
+        <article class="card">
+          <h3>Active Users</h3>
+          <p>95</p>
+        </article>
+
+        <article class="card">
+          <h3>Pending Requests</h3>
+          <p>25</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="activity-heading">
+      <h2 id="activity-heading">Recent Activity</h2>
+
+      <table>
+        <caption>Recent dashboard activities</caption>
+        <thead>
+          <tr>
+            <th scope="col">Activity</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>New user registered</td>
+            <td>16 November 2026</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Profile updated</td>
+            <td>15 November 2026</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Account request</td>
+            <td>14 November 2026</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Accessible Dashboard Project</p>
+  </footer>
+
+</body>
+</html>

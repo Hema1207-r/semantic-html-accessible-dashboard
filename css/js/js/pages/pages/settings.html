@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Accessible Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <h1>Accessible Dashboard</h1>
+    <p>Settings</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="../index.html">Home</a>
+    <a href="users.html">Users</a>
+    <a href="settings.html" aria-current="page">Settings</a>
+  </nav>
+
+  <aside aria-label="Sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Dashboard</a></li>
+      <li><a href="users.html">User Management</a></li>
+      <li><a href="settings.html" aria-current="page">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <section aria-labelledby="settings-heading">
+      <h2 id="settings-heading">Account Settings</h2>
+      <p>Update your account information and preferences.</p>
+
+      <form action="#" method="get">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Notification Preferences</legend>
+
+          <div class="form-group">
+            <input
+              type="checkbox"
+              id="email-notifications"
+              name="email-notifications"
+              checked
+            >
+            <label for="email-notifications">
+              Receive email notifications
+            </label>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="checkbox"
+              id="updates"
+              name="updates"
+            >
+            <label for="updates">
+              Receive product updates
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Save Settings</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Accessible Dashboard Project</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage users in the accessible admin dashboard">
+    <title>Manage Users | Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="users.html" aria-current="page">Users</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav aria-label="Dashboard navigation">
+                <ul>
+                    <li><a href="../index.html">Dashboard</a></li>
+                    <li><a href="users.html" aria-current="page">Manage Users</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content" class="main-content">
+
+            <section aria-labelledby="users-heading">
+                <h2 id="users-heading">Manage Users</h2>
+                <p>View and manage registered users.</p>
+            </section>
+
+            <section aria-labelledby="records-heading">
+                <h2 id="records-heading">User Records</h2>
+
+                <div class="table-container">
+                    <table>
+                        <caption>Registered user information</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Rahul</td>
+                                <td>rahul@example.com</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>Ananya</td>
+                                <td>ananya@example.com</td>
+                                <td>Pending</td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>Arjun</td>
+                                <td>arjun@example.com</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Accessible Admin Dashboard.</p>
+    </footer>
+
+</body>
+</html>
+  

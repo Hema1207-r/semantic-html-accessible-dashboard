@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible and responsive admin dashboard">
+    <title>Accessible Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="pages/users.html">Users</a>
+            <a href="pages/settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar" aria-label="Sidebar">
+            <h2>Menu</h2>
+            <nav aria-label="Dashboard navigation">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="pages/users.html">Manage Users</a></li>
+                    <li><a href="pages/settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content" class="main-content">
+
+            <section aria-labelledby="welcome-title">
+                <h2 id="welcome-title">Welcome to Dashboard</h2>
+                <p>Manage your application from one accessible place.</p>
+            </section>
+
+            <section class="cards" aria-label="Dashboard statistics">
+
+                <article class="card">
+                    <h3>Total Users</h3>
+                    <p>250</p>
+                </article>
+
+                <article class="card">
+                    <h3>Active Users</h3>
+                    <p>180</p>
+                </article>
+
+                <article class="card">
+                    <h3>Pending Requests</h3>
+                    <p>15</p>
+                </article>
+
+            </section>
+
+            <section aria-labelledby="table-title">
+                <h2 id="table-title">Recent Users</h2>
+
+                <div class="table-container">
+                    <table>
+                        <caption>Recently registered users</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Rahul</td>
+                                <td>rahul@example.com</td>
+                                <td>Active</td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>Ananya</td>
+                                <td>ananya@example.com</td>
+                                <td>Pending</td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>Arjun</td>
+                                <td>arjun@example.com</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section aria-labelledby="contact-title">
+                <h2 id="contact-title">Add New User</h2>
+
+                <form id="user-form">
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email">
+                    </div>
+
+                    <button type="submit">Add User</button>
+
+                    <p id="form-message" role="status" aria-live="polite"></p>
+
+                </form>
+            </section>
+
+            <section aria-labelledby="modal-title">
+                <h2 id="modal-title">Modal Dialog</h2>
+                <button type="button" id="open-modal">
+                    Open Information
+                </button>
+
+                <dialog id="info-modal" aria-labelledby="dialog-heading">
+                    <h3 id="dialog-heading">Dashboard Information</h3>
+                    <p>This is an accessible modal dialog.</p>
+                    <form method="dialog">
+                        <button type="submit">Close</button>
+                    </form>
+                </dialog>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Accessible Admin Dashboard.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
- 
+  
 // Select form elements
 const userForm = document.getElementById("user-form");
 const nameInput = document.getElementById("name");
